@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		076E558D6C86DC46CCD07996 /* libPods-GCSEmitterLayerDebugMode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28476E29DC72531E14EF1E0A /* libPods-GCSEmitterLayerDebugMode.a */; };
+		5D62B5D02185A31F006BBB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5CF2185A31F006BBB20 /* AppDelegate.m */; };
+		5D62B5D32185A31F006BBB20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5D22185A31F006BBB20 /* ViewController.m */; };
+		5D62B5D62185A31F006BBB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B5D42185A31F006BBB20 /* Main.storyboard */; };
+		5D62B5D82185A322006BBB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B5D72185A322006BBB20 /* Assets.xcassets */; };
+		5D62B5DB2185A322006BBB20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B5D92185A322006BBB20 /* LaunchScreen.storyboard */; };
+		5D62B5DE2185A322006BBB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5DD2185A322006BBB20 /* main.m */; };
+		5D62B5E82185A322006BBB20 /* GCSEmitterLayerDebugModeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5E72185A322006BBB20 /* GCSEmitterLayerDebugModeTests.m */; };
+		5D62B5F32185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5F22185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.m */; };
+		5D62B6022185A39D006BBB20 /* GCSEmitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B6012185A39D006BBB20 /* GCSEmitterManager.m */; };
+		5D62B6052185A40C006BBB20 /* GCSEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B6042185A40C006BBB20 /* GCSEmitterView.m */; };
+		5D62B6082185B746006BBB20 /* GCSDebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B6072185B746006BBB20 /* GCSDebugView.m */; };
+		5D62B60B2185B787006BBB20 /* GCSDebugEntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B60A2185B787006BBB20 /* GCSDebugEntryView.m */; };
+		5D62B60E2185B7F4006BBB20 /* GCSDebugSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B60D2185B7F4006BBB20 /* GCSDebugSectionView.m */; };
+		5D62B6112185B821006BBB20 /* GCSDebugConditionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B6102185B821006BBB20 /* GCSDebugConditionCell.m */; };
+		5D62B6142185B897006BBB20 /* GCSContentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B6132185B897006BBB20 /* GCSContentPickerViewController.m */; };
+		5D62B6182185D45D006BBB20 /* GCSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B6172185D45D006BBB20 /* GCSNavigationController.m */; };
+		5D62B61F2185FD02006BBB20 /* ttl_group_love.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61A2185FD02006BBB20 /* ttl_group_love.png */; };
+		5D62B6202185FD02006BBB20 /* ttl_group_amative.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61B2185FD02006BBB20 /* ttl_group_amative.png */; };
+		5D62B6212185FD02006BBB20 /* ttl_group_hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61C2185FD02006BBB20 /* ttl_group_hi.png */; };
+		5D62B6222185FD02006BBB20 /* ttl_group_helpless.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61D2185FD02006BBB20 /* ttl_group_helpless.png */; };
+		5D62B6232185FD02006BBB20 /* ttl_group_lightCry.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61E2185FD02006BBB20 /* ttl_group_lightCry.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D62B5E42185A322006BBB20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D62B5C32185A31F006BBB20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D62B5CA2185A31F006BBB20;
+			remoteInfo = GCSEmitterLayerDebugMode;
+		};
+		5D62B5EF2185A322006BBB20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D62B5C32185A31F006BBB20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D62B5CA2185A31F006BBB20;
+			remoteInfo = GCSEmitterLayerDebugMode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28476E29DC72531E14EF1E0A /* libPods-GCSEmitterLayerDebugMode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCSEmitterLayerDebugMode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		287CBA8BF049972C073D3A96 /* Pods-GCSEmitterLayerDebugMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSEmitterLayerDebugMode.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCSEmitterLayerDebugMode/Pods-GCSEmitterLayerDebugMode.release.xcconfig"; sourceTree = "<group>"; };
+		5D62B5CB2185A31F006BBB20 /* GCSEmitterLayerDebugMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCSEmitterLayerDebugMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D62B5CE2185A31F006BBB20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D62B5CF2185A31F006BBB20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D62B5D12185A31F006BBB20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5D62B5D22185A31F006BBB20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D62B5D52185A31F006BBB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D62B5D72185A322006BBB20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D62B5DA2185A322006BBB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D62B5DC2185A322006BBB20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D62B5DD2185A322006BBB20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D62B5E32185A322006BBB20 /* GCSEmitterLayerDebugModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCSEmitterLayerDebugModeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D62B5E72185A322006BBB20 /* GCSEmitterLayerDebugModeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSEmitterLayerDebugModeTests.m; sourceTree = "<group>"; };
+		5D62B5E92185A322006BBB20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D62B5EE2185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCSEmitterLayerDebugModeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D62B5F22185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSEmitterLayerDebugModeUITests.m; sourceTree = "<group>"; };
+		5D62B5F42185A322006BBB20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D62B6002185A39D006BBB20 /* GCSEmitterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSEmitterManager.h; sourceTree = "<group>"; };
+		5D62B6012185A39D006BBB20 /* GCSEmitterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSEmitterManager.m; sourceTree = "<group>"; };
+		5D62B6032185A40C006BBB20 /* GCSEmitterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSEmitterView.h; sourceTree = "<group>"; };
+		5D62B6042185A40C006BBB20 /* GCSEmitterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSEmitterView.m; sourceTree = "<group>"; };
+		5D62B6062185B746006BBB20 /* GCSDebugView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSDebugView.h; sourceTree = "<group>"; };
+		5D62B6072185B746006BBB20 /* GCSDebugView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSDebugView.m; sourceTree = "<group>"; };
+		5D62B6092185B787006BBB20 /* GCSDebugEntryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSDebugEntryView.h; sourceTree = "<group>"; };
+		5D62B60A2185B787006BBB20 /* GCSDebugEntryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSDebugEntryView.m; sourceTree = "<group>"; };
+		5D62B60C2185B7F4006BBB20 /* GCSDebugSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSDebugSectionView.h; sourceTree = "<group>"; };
+		5D62B60D2185B7F4006BBB20 /* GCSDebugSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSDebugSectionView.m; sourceTree = "<group>"; };
+		5D62B60F2185B821006BBB20 /* GCSDebugConditionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSDebugConditionCell.h; sourceTree = "<group>"; };
+		5D62B6102185B821006BBB20 /* GCSDebugConditionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSDebugConditionCell.m; sourceTree = "<group>"; };
+		5D62B6122185B897006BBB20 /* GCSContentPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSContentPickerViewController.h; sourceTree = "<group>"; };
+		5D62B6132185B897006BBB20 /* GCSContentPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSContentPickerViewController.m; sourceTree = "<group>"; };
+		5D62B6152185BB10006BBB20 /* GCSCommon.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCSCommon.pch; sourceTree = "<group>"; };
+		5D62B6162185D45D006BBB20 /* GCSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSNavigationController.h; sourceTree = "<group>"; };
+		5D62B6172185D45D006BBB20 /* GCSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSNavigationController.m; sourceTree = "<group>"; };
+		5D62B61A2185FD02006BBB20 /* ttl_group_love.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_love.png; sourceTree = "<group>"; };
+		5D62B61B2185FD02006BBB20 /* ttl_group_amative.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_amative.png; sourceTree = "<group>"; };
+		5D62B61C2185FD02006BBB20 /* ttl_group_hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_hi.png; sourceTree = "<group>"; };
+		5D62B61D2185FD02006BBB20 /* ttl_group_helpless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_helpless.png; sourceTree = "<group>"; };
+		5D62B61E2185FD02006BBB20 /* ttl_group_lightCry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_lightCry.png; sourceTree = "<group>"; };
+		B01D56C0899E795ECBCE76C6 /* Pods-GCSEmitterLayerDebugMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSEmitterLayerDebugMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCSEmitterLayerDebugMode/Pods-GCSEmitterLayerDebugMode.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D62B5C82185A31F006BBB20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076E558D6C86DC46CCD07996 /* libPods-GCSEmitterLayerDebugMode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D62B5E02185A322006BBB20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D62B5EB2185A322006BBB20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D62B5C22185A31F006BBB20 = {
+			isa = PBXGroup;
+			children = (
+				5D62B5CD2185A31F006BBB20 /* GCSEmitterLayerDebugMode */,
+				5D62B5E62185A322006BBB20 /* GCSEmitterLayerDebugModeTests */,
+				5D62B5F12185A322006BBB20 /* GCSEmitterLayerDebugModeUITests */,
+				5D62B5CC2185A31F006BBB20 /* Products */,
+				A7522ACFFA451D7B453EF76D /* Pods */,
+				F22EFEE33BF291D620F21EBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D62B5CC2185A31F006BBB20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D62B5CB2185A31F006BBB20 /* GCSEmitterLayerDebugMode.app */,
+				5D62B5E32185A322006BBB20 /* GCSEmitterLayerDebugModeTests.xctest */,
+				5D62B5EE2185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D62B5CD2185A31F006BBB20 /* GCSEmitterLayerDebugMode */ = {
+			isa = PBXGroup;
+			children = (
+				5D62B6192185FC42006BBB20 /* Resource */,
+				5D62B5CE2185A31F006BBB20 /* AppDelegate.h */,
+				5D62B5CF2185A31F006BBB20 /* AppDelegate.m */,
+				5D62B5D12185A31F006BBB20 /* ViewController.h */,
+				5D62B5D22185A31F006BBB20 /* ViewController.m */,
+				5D62B6002185A39D006BBB20 /* GCSEmitterManager.h */,
+				5D62B6012185A39D006BBB20 /* GCSEmitterManager.m */,
+				5D62B6032185A40C006BBB20 /* GCSEmitterView.h */,
+				5D62B6042185A40C006BBB20 /* GCSEmitterView.m */,
+				5D62B6092185B787006BBB20 /* GCSDebugEntryView.h */,
+				5D62B60A2185B787006BBB20 /* GCSDebugEntryView.m */,
+				5D62B6062185B746006BBB20 /* GCSDebugView.h */,
+				5D62B6072185B746006BBB20 /* GCSDebugView.m */,
+				5D62B60C2185B7F4006BBB20 /* GCSDebugSectionView.h */,
+				5D62B60D2185B7F4006BBB20 /* GCSDebugSectionView.m */,
+				5D62B60F2185B821006BBB20 /* GCSDebugConditionCell.h */,
+				5D62B6102185B821006BBB20 /* GCSDebugConditionCell.m */,
+				5D62B6122185B897006BBB20 /* GCSContentPickerViewController.h */,
+				5D62B6132185B897006BBB20 /* GCSContentPickerViewController.m */,
+				5D62B6162185D45D006BBB20 /* GCSNavigationController.h */,
+				5D62B6172185D45D006BBB20 /* GCSNavigationController.m */,
+				5D62B6152185BB10006BBB20 /* GCSCommon.pch */,
+				5D62B5D42185A31F006BBB20 /* Main.storyboard */,
+				5D62B5D72185A322006BBB20 /* Assets.xcassets */,
+				5D62B5D92185A322006BBB20 /* LaunchScreen.storyboard */,
+				5D62B5DC2185A322006BBB20 /* Info.plist */,
+				5D62B5DD2185A322006BBB20 /* main.m */,
+			);
+			path = GCSEmitterLayerDebugMode;
+			sourceTree = "<group>";
+		};
+		5D62B5E62185A322006BBB20 /* GCSEmitterLayerDebugModeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D62B5E72185A322006BBB20 /* GCSEmitterLayerDebugModeTests.m */,
+				5D62B5E92185A322006BBB20 /* Info.plist */,
+			);
+			path = GCSEmitterLayerDebugModeTests;
+			sourceTree = "<group>";
+		};
+		5D62B5F12185A322006BBB20 /* GCSEmitterLayerDebugModeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D62B5F22185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.m */,
+				5D62B5F42185A322006BBB20 /* Info.plist */,
+			);
+			path = GCSEmitterLayerDebugModeUITests;
+			sourceTree = "<group>";
+		};
+		5D62B6192185FC42006BBB20 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5D62B61B2185FD02006BBB20 /* ttl_group_amative.png */,
+				5D62B61D2185FD02006BBB20 /* ttl_group_helpless.png */,
+				5D62B61C2185FD02006BBB20 /* ttl_group_hi.png */,
+				5D62B61E2185FD02006BBB20 /* ttl_group_lightCry.png */,
+				5D62B61A2185FD02006BBB20 /* ttl_group_love.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A7522ACFFA451D7B453EF76D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B01D56C0899E795ECBCE76C6 /* Pods-GCSEmitterLayerDebugMode.debug.xcconfig */,
+				287CBA8BF049972C073D3A96 /* Pods-GCSEmitterLayerDebugMode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F22EFEE33BF291D620F21EBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28476E29DC72531E14EF1E0A /* libPods-GCSEmitterLayerDebugMode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D62B5CA2185A31F006BBB20 /* GCSEmitterLayerDebugMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D62B5F72185A322006BBB20 /* Build configuration list for PBXNativeTarget "GCSEmitterLayerDebugMode" */;
+			buildPhases = (
+				73CB00793C3E646C1A944770 /* [CP] Check Pods Manifest.lock */,
+				5D62B5C72185A31F006BBB20 /* Sources */,
+				5D62B5C82185A31F006BBB20 /* Frameworks */,
+				5D62B5C92185A31F006BBB20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCSEmitterLayerDebugMode;
+			productName = GCSEmitterLayerDebugMode;
+			productReference = 5D62B5CB2185A31F006BBB20 /* GCSEmitterLayerDebugMode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D62B5E22185A322006BBB20 /* GCSEmitterLayerDebugModeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D62B5FA2185A322006BBB20 /* Build configuration list for PBXNativeTarget "GCSEmitterLayerDebugModeTests" */;
+			buildPhases = (
+				5D62B5DF2185A322006BBB20 /* Sources */,
+				5D62B5E02185A322006BBB20 /* Frameworks */,
+				5D62B5E12185A322006BBB20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D62B5E52185A322006BBB20 /* PBXTargetDependency */,
+			);
+			name = GCSEmitterLayerDebugModeTests;
+			productName = GCSEmitterLayerDebugModeTests;
+			productReference = 5D62B5E32185A322006BBB20 /* GCSEmitterLayerDebugModeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D62B5ED2185A322006BBB20 /* GCSEmitterLayerDebugModeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D62B5FD2185A322006BBB20 /* Build configuration list for PBXNativeTarget "GCSEmitterLayerDebugModeUITests" */;
+			buildPhases = (
+				5D62B5EA2185A322006BBB20 /* Sources */,
+				5D62B5EB2185A322006BBB20 /* Frameworks */,
+				5D62B5EC2185A322006BBB20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D62B5F02185A322006BBB20 /* PBXTargetDependency */,
+			);
+			name = GCSEmitterLayerDebugModeUITests;
+			productName = GCSEmitterLayerDebugModeUITests;
+			productReference = 5D62B5EE2185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D62B5C32185A31F006BBB20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "宋冠辰";
+				TargetAttributes = {
+					5D62B5CA2185A31F006BBB20 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					5D62B5E22185A322006BBB20 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 5D62B5CA2185A31F006BBB20;
+					};
+					5D62B5ED2185A322006BBB20 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 5D62B5CA2185A31F006BBB20;
+					};
+				};
+			};
+			buildConfigurationList = 5D62B5C62185A31F006BBB20 /* Build configuration list for PBXProject "GCSEmitterLayerDebugMode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D62B5C22185A31F006BBB20;
+			productRefGroup = 5D62B5CC2185A31F006BBB20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D62B5CA2185A31F006BBB20 /* GCSEmitterLayerDebugMode */,
+				5D62B5E22185A322006BBB20 /* GCSEmitterLayerDebugModeTests */,
+				5D62B5ED2185A322006BBB20 /* GCSEmitterLayerDebugModeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D62B5C92185A31F006BBB20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D62B5DB2185A322006BBB20 /* LaunchScreen.storyboard in Resources */,
+				5D62B6212185FD02006BBB20 /* ttl_group_hi.png in Resources */,
+				5D62B5D82185A322006BBB20 /* Assets.xcassets in Resources */,
+				5D62B6202185FD02006BBB20 /* ttl_group_amative.png in Resources */,
+				5D62B6222185FD02006BBB20 /* ttl_group_helpless.png in Resources */,
+				5D62B61F2185FD02006BBB20 /* ttl_group_love.png in Resources */,
+				5D62B6232185FD02006BBB20 /* ttl_group_lightCry.png in Resources */,
+				5D62B5D62185A31F006BBB20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D62B5E12185A322006BBB20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D62B5EC2185A322006BBB20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73CB00793C3E646C1A944770 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCSEmitterLayerDebugMode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D62B5C72185A31F006BBB20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D62B60B2185B787006BBB20 /* GCSDebugEntryView.m in Sources */,
+				5D62B6082185B746006BBB20 /* GCSDebugView.m in Sources */,
+				5D62B6142185B897006BBB20 /* GCSContentPickerViewController.m in Sources */,
+				5D62B6022185A39D006BBB20 /* GCSEmitterManager.m in Sources */,
+				5D62B5D32185A31F006BBB20 /* ViewController.m in Sources */,
+				5D62B6182185D45D006BBB20 /* GCSNavigationController.m in Sources */,
+				5D62B60E2185B7F4006BBB20 /* GCSDebugSectionView.m in Sources */,
+				5D62B6052185A40C006BBB20 /* GCSEmitterView.m in Sources */,
+				5D62B5DE2185A322006BBB20 /* main.m in Sources */,
+				5D62B5D02185A31F006BBB20 /* AppDelegate.m in Sources */,
+				5D62B6112185B821006BBB20 /* GCSDebugConditionCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D62B5DF2185A322006BBB20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D62B5E82185A322006BBB20 /* GCSEmitterLayerDebugModeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D62B5EA2185A322006BBB20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D62B5F32185A322006BBB20 /* GCSEmitterLayerDebugModeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D62B5E52185A322006BBB20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D62B5CA2185A31F006BBB20 /* GCSEmitterLayerDebugMode */;
+			targetProxy = 5D62B5E42185A322006BBB20 /* PBXContainerItemProxy */;
+		};
+		5D62B5F02185A322006BBB20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D62B5CA2185A31F006BBB20 /* GCSEmitterLayerDebugMode */;
+			targetProxy = 5D62B5EF2185A322006BBB20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D62B5D42185A31F006BBB20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D62B5D52185A31F006BBB20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D62B5D92185A322006BBB20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D62B5DA2185A322006BBB20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D62B5F52185A322006BBB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D62B5F62185A322006BBB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D62B5F82185A322006BBB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B01D56C0899E795ECBCE76C6 /* Pods-GCSEmitterLayerDebugMode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GCSEmitterLayerDebugMode/GCSCommon.pch;
+				INFOPLIST_FILE = GCSEmitterLayerDebugMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GCS.GCSEmitterLayerDebugMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D62B5F92185A322006BBB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287CBA8BF049972C073D3A96 /* Pods-GCSEmitterLayerDebugMode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GCSEmitterLayerDebugMode/GCSCommon.pch;
+				INFOPLIST_FILE = GCSEmitterLayerDebugMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GCS.GCSEmitterLayerDebugMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D62B5FB2185A322006BBB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GCSEmitterLayerDebugModeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GCS.GCSEmitterLayerDebugModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCSEmitterLayerDebugMode.app/GCSEmitterLayerDebugMode";
+			};
+			name = Debug;
+		};
+		5D62B5FC2185A322006BBB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GCSEmitterLayerDebugModeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GCS.GCSEmitterLayerDebugModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCSEmitterLayerDebugMode.app/GCSEmitterLayerDebugMode";
+			};
+			name = Release;
+		};
+		5D62B5FE2185A322006BBB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GCSEmitterLayerDebugModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GCS.GCSEmitterLayerDebugModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GCSEmitterLayerDebugMode;
+			};
+			name = Debug;
+		};
+		5D62B5FF2185A322006BBB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GCSEmitterLayerDebugModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GCS.GCSEmitterLayerDebugModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GCSEmitterLayerDebugMode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D62B5C62185A31F006BBB20 /* Build configuration list for PBXProject "GCSEmitterLayerDebugMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D62B5F52185A322006BBB20 /* Debug */,
+				5D62B5F62185A322006BBB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D62B5F72185A322006BBB20 /* Build configuration list for PBXNativeTarget "GCSEmitterLayerDebugMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D62B5F82185A322006BBB20 /* Debug */,
+				5D62B5F92185A322006BBB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D62B5FA2185A322006BBB20 /* Build configuration list for PBXNativeTarget "GCSEmitterLayerDebugModeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D62B5FB2185A322006BBB20 /* Debug */,
+				5D62B5FC2185A322006BBB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D62B5FD2185A322006BBB20 /* Build configuration list for PBXNativeTarget "GCSEmitterLayerDebugModeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D62B5FE2185A322006BBB20 /* Debug */,
+				5D62B5FF2185A322006BBB20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D62B5C32185A31F006BBB20 /* Project object */;
+}

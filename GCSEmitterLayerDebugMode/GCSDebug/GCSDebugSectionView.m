@@ -8,6 +8,7 @@
 
 #import "GCSDebugSectionView.h"
 #import "GCSDebugConditionCell.h"
+#import "GCSValueWindow.h"
 
 static const CGFloat kPaddingX = 12;//左间距
 static const CGFloat kCellHeight = 30;//cell高度
@@ -19,6 +20,8 @@ static const CGFloat kCellHeight = 30;//cell高度
 
 @property (nonatomic, copy) NSDictionary *info;//配置字典
 @property (nonatomic, copy) NSString *section;
+
+@property (nonatomic, strong) GCSValueWindow *valueWindow;
 
 @end
 
@@ -100,7 +103,11 @@ static const CGFloat kCellHeight = 30;//cell高度
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"~~~~~");
+    NSArray *values = self.info.allKeys;
+    NSString *value = values[indexPath.row];
+    GCSDebugConditionStyle style = [self.info[value] integerValue];
+
+    self.valueWindow = [GCSValueWindow showValueWindow:value type:style];
 }
 
 @end

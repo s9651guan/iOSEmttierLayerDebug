@@ -8,6 +8,7 @@
 
 #import "GCSDebugView.h"
 #import "GCSDebugSectionView.h"
+#import "GCSAttributedMap.h"
 
 @interface GCSDebugView ()
 
@@ -46,32 +47,13 @@
     CGFloat y = 0;
     CGFloat width = self.bounds.size.width;
     
-    NSDictionary *dict = @{
-                           @"aaa":@(801),
-                           @"bbb":@(802),
-                           @"ccc":@(803),
-                           @"ddd":@(804),
-                           @"aaaq":@(801),
-                           @"bbba":@(802),
-                           @"cccq":@(803),
-                           @"dddd":@(804),
-                           @"aaae":@(801),
-                           @"bbbe":@(802),
-                           @"ccce":@(803),
-                           @"ddde":@(804),
-                           @"aaaee":@(801),
-                           @"bbbee":@(802),
-                           @"cccee":@(803),
-                           @"dddee":@(804)
-                           };
-    
-    GCSDebugSectionView *layerSetion = [[GCSDebugSectionView alloc]initWithValueInfo:dict section:@"EmitterLayer"];
+    GCSDebugSectionView *layerSetion = [[GCSDebugSectionView alloc]initWithValueInfo:[GCSAttributedMap emitterLayerDict] section:@"EmitterLayer"];
     [self.scrollView addSubview:layerSetion];
     
     CGFloat layerSetionHeight = [layerSetion calculateHeight];
     layerSetion.frame = CGRectMake(0, 0, self.bounds.size.width, layerSetionHeight);
     
-    GCSDebugSectionView *cellSetion = [[GCSDebugSectionView alloc]initWithValueInfo:dict section:@"EmitterCell"];
+    GCSDebugSectionView *cellSetion = [[GCSDebugSectionView alloc]initWithValueInfo:[GCSAttributedMap emitterCellDict] section:@"EmitterCell"];
     [self.scrollView addSubview:cellSetion];
     
     CGFloat cellSectionHeight = [cellSetion calculateHeight];

@@ -47,6 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat alphaSpeed;
 + (GCSEmitterManager *)sharedManager;
 
+- (void)updateAttribute:(NSString *)att value:(id)value;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -81,7 +81,17 @@ static const CGFloat kDetailImageTag = 19908;//详情ImageView
 #pragma mark - Action
 
 - (void)back:(UIBarButtonItem *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    GCS_WS(ws);
+    UIAlertController *aController = [UIAlertController alertControllerWithTitle:@"提示" message:@"当前内容尚未保存，确定退出？" preferredStyle:UIAlertControllerStyleAlert];
+    [aController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [ws dismissViewControllerAnimated:YES completion:nil];
+    }]];
+    [aController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:aController animated:YES completion:nil];
+ 
 }
 
 - (void)done:(UIBarButtonItem *)sender {

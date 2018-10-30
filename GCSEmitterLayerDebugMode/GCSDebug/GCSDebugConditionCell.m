@@ -44,7 +44,7 @@ static const CGFloat kPaddingX = 12;//左间距
     }];
 }
 
-- (void)updateWithValue:(NSString *)value seletedStyle:(GCSDebugConditionCellSeletedStyle)style {
+- (void)updateWithValue:(NSString *)value seletedStyle:(GCSDebugConditionStyle)style {
     [self.valueLabel setText:value];
     self.seletedStyle = style;
 }

@@ -21,7 +21,7 @@ typedef void(^GCSOneParamBlock)(id);
 #define GCS_NAVBAR_HEIGHT 44
 #define GCS_NAV_PADDINGY (GCS_STATUS_HEIGHT + GCS_NAVBAR_HEIGHT)
 
-#define GCS_WS(weakSelf) __weak typeof(&*self)weakSelf = self;
+#define GCS_WS(weakSelf) __weak typeof(&*self)weakSelf = self
 #define GCS_VerifiedString(string) ({\
     BOOL isVerified = NO;\
     if (string != nil  && [string isKindOfClass:NSString.class] && string.length > 0) {\

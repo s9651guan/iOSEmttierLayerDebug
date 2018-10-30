@@ -12,7 +12,7 @@
 		5D04F465218779E2005D17C6 /* GCSAttributedMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04F464218779E2005D17C6 /* GCSAttributedMap.m */; };
 		5D04F4682187DDA4005D17C6 /* UIColor+GCSHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04F4672187DDA4005D17C6 /* UIColor+GCSHexColor.m */; };
 		5D62B5D02185A31F006BBB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5CF2185A31F006BBB20 /* AppDelegate.m */; };
-		5D62B5D32185A31F006BBB20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5D22185A31F006BBB20 /* ViewController.m */; };
+		5D62B5D32185A31F006BBB20 /* GCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5D22185A31F006BBB20 /* GCSViewController.m */; };
 		5D62B5D62185A31F006BBB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B5D42185A31F006BBB20 /* Main.storyboard */; };
 		5D62B5D82185A322006BBB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B5D72185A322006BBB20 /* Assets.xcassets */; };
 		5D62B5DB2185A322006BBB20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B5D92185A322006BBB20 /* LaunchScreen.storyboard */; };
@@ -32,6 +32,7 @@
 		5D62B6212185FD02006BBB20 /* ttl_group_hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61C2185FD02006BBB20 /* ttl_group_hi.png */; };
 		5D62B6222185FD02006BBB20 /* ttl_group_helpless.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61D2185FD02006BBB20 /* ttl_group_helpless.png */; };
 		5D62B6232185FD02006BBB20 /* ttl_group_lightCry.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B61E2185FD02006BBB20 /* ttl_group_lightCry.png */; };
+		5D93C6D5218891C900094453 /* GCSValueWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D93C6D4218891C900094453 /* GCSValueWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +64,8 @@
 		5D62B5CB2185A31F006BBB20 /* GCSEmitterLayerDebugMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCSEmitterLayerDebugMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D62B5CE2185A31F006BBB20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D62B5CF2185A31F006BBB20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D62B5D12185A31F006BBB20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D62B5D22185A31F006BBB20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D62B5D12185A31F006BBB20 /* GCSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSViewController.h; sourceTree = "<group>"; };
+		5D62B5D22185A31F006BBB20 /* GCSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSViewController.m; sourceTree = "<group>"; };
 		5D62B5D52185A31F006BBB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D62B5D72185A322006BBB20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D62B5DA2185A322006BBB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,6 +99,8 @@
 		5D62B61C2185FD02006BBB20 /* ttl_group_hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_hi.png; sourceTree = "<group>"; };
 		5D62B61D2185FD02006BBB20 /* ttl_group_helpless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_helpless.png; sourceTree = "<group>"; };
 		5D62B61E2185FD02006BBB20 /* ttl_group_lightCry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttl_group_lightCry.png; sourceTree = "<group>"; };
+		5D93C6D3218891C900094453 /* GCSValueWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSValueWindow.h; sourceTree = "<group>"; };
+		5D93C6D4218891C900094453 /* GCSValueWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSValueWindow.m; sourceTree = "<group>"; };
 		B01D56C0899E795ECBCE76C6 /* Pods-GCSEmitterLayerDebugMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSEmitterLayerDebugMode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCSEmitterLayerDebugMode/Pods-GCSEmitterLayerDebugMode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,33 +155,18 @@
 		5D62B5CD2185A31F006BBB20 /* GCSEmitterLayerDebugMode */ = {
 			isa = PBXGroup;
 			children = (
+				5D93C6D72188A65900094453 /* Category */,
+				5D93C6D82188A67200094453 /* GCSEmitter */,
+				5D93C6D62188A62200094453 /* GCSDebug */,
 				5D62B6192185FC42006BBB20 /* Resource */,
 				5D62B5CE2185A31F006BBB20 /* AppDelegate.h */,
 				5D62B5CF2185A31F006BBB20 /* AppDelegate.m */,
-				5D62B5D12185A31F006BBB20 /* ViewController.h */,
-				5D62B5D22185A31F006BBB20 /* ViewController.m */,
-				5D04F4662187DDA4005D17C6 /* UIColor+GCSHexColor.h */,
-				5D04F4672187DDA4005D17C6 /* UIColor+GCSHexColor.m */,
-				5D62B6002185A39D006BBB20 /* GCSEmitterManager.h */,
-				5D62B6012185A39D006BBB20 /* GCSEmitterManager.m */,
-				5D62B6032185A40C006BBB20 /* GCSEmitterView.h */,
-				5D62B6042185A40C006BBB20 /* GCSEmitterView.m */,
-				5D62B6092185B787006BBB20 /* GCSDebugEntryView.h */,
-				5D62B60A2185B787006BBB20 /* GCSDebugEntryView.m */,
-				5D62B6062185B746006BBB20 /* GCSDebugView.h */,
-				5D62B6072185B746006BBB20 /* GCSDebugView.m */,
-				5D62B60C2185B7F4006BBB20 /* GCSDebugSectionView.h */,
-				5D62B60D2185B7F4006BBB20 /* GCSDebugSectionView.m */,
-				5D62B60F2185B821006BBB20 /* GCSDebugConditionCell.h */,
-				5D62B6102185B821006BBB20 /* GCSDebugConditionCell.m */,
-				5D62B6122185B897006BBB20 /* GCSContentPickerViewController.h */,
-				5D62B6132185B897006BBB20 /* GCSContentPickerViewController.m */,
-				5D04F46021875EA2005D17C6 /* GCSValueView.h */,
-				5D04F46121875EA2005D17C6 /* GCSValueView.m */,
-				5D04F463218779E2005D17C6 /* GCSAttributedMap.h */,
-				5D04F464218779E2005D17C6 /* GCSAttributedMap.m */,
+				5D62B5D12185A31F006BBB20 /* GCSViewController.h */,
+				5D62B5D22185A31F006BBB20 /* GCSViewController.m */,
 				5D62B6162185D45D006BBB20 /* GCSNavigationController.h */,
 				5D62B6172185D45D006BBB20 /* GCSNavigationController.m */,
+				5D62B6122185B897006BBB20 /* GCSContentPickerViewController.h */,
+				5D62B6132185B897006BBB20 /* GCSContentPickerViewController.m */,
 				5D62B6152185BB10006BBB20 /* GCSCommon.pch */,
 				5D62B5D42185A31F006BBB20 /* Main.storyboard */,
 				5D62B5D72185A322006BBB20 /* Assets.xcassets */,
@@ -217,6 +205,47 @@
 				5D62B61A2185FD02006BBB20 /* ttl_group_love.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		5D93C6D62188A62200094453 /* GCSDebug */ = {
+			isa = PBXGroup;
+			children = (
+				5D62B6092185B787006BBB20 /* GCSDebugEntryView.h */,
+				5D62B60A2185B787006BBB20 /* GCSDebugEntryView.m */,
+				5D62B6062185B746006BBB20 /* GCSDebugView.h */,
+				5D62B6072185B746006BBB20 /* GCSDebugView.m */,
+				5D62B60C2185B7F4006BBB20 /* GCSDebugSectionView.h */,
+				5D62B60D2185B7F4006BBB20 /* GCSDebugSectionView.m */,
+				5D62B60F2185B821006BBB20 /* GCSDebugConditionCell.h */,
+				5D62B6102185B821006BBB20 /* GCSDebugConditionCell.m */,
+				5D04F46021875EA2005D17C6 /* GCSValueView.h */,
+				5D04F46121875EA2005D17C6 /* GCSValueView.m */,
+				5D93C6D3218891C900094453 /* GCSValueWindow.h */,
+				5D93C6D4218891C900094453 /* GCSValueWindow.m */,
+			);
+			path = GCSDebug;
+			sourceTree = "<group>";
+		};
+		5D93C6D72188A65900094453 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5D04F4662187DDA4005D17C6 /* UIColor+GCSHexColor.h */,
+				5D04F4672187DDA4005D17C6 /* UIColor+GCSHexColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5D93C6D82188A67200094453 /* GCSEmitter */ = {
+			isa = PBXGroup;
+			children = (
+				5D04F463218779E2005D17C6 /* GCSAttributedMap.h */,
+				5D04F464218779E2005D17C6 /* GCSAttributedMap.m */,
+				5D62B6002185A39D006BBB20 /* GCSEmitterManager.h */,
+				5D62B6012185A39D006BBB20 /* GCSEmitterManager.m */,
+				5D62B6032185A40C006BBB20 /* GCSEmitterView.h */,
+				5D62B6042185A40C006BBB20 /* GCSEmitterView.m */,
+			);
+			path = GCSEmitter;
 			sourceTree = "<group>";
 		};
 		A7522ACFFA451D7B453EF76D /* Pods */ = {
@@ -402,10 +431,11 @@
 				5D62B6142185B897006BBB20 /* GCSContentPickerViewController.m in Sources */,
 				5D04F465218779E2005D17C6 /* GCSAttributedMap.m in Sources */,
 				5D62B6022185A39D006BBB20 /* GCSEmitterManager.m in Sources */,
-				5D62B5D32185A31F006BBB20 /* ViewController.m in Sources */,
+				5D62B5D32185A31F006BBB20 /* GCSViewController.m in Sources */,
 				5D62B6182185D45D006BBB20 /* GCSNavigationController.m in Sources */,
 				5D04F4682187DDA4005D17C6 /* UIColor+GCSHexColor.m in Sources */,
 				5D04F46221875EA2005D17C6 /* GCSValueView.m in Sources */,
+				5D93C6D5218891C900094453 /* GCSValueWindow.m in Sources */,
 				5D62B60E2185B7F4006BBB20 /* GCSDebugSectionView.m in Sources */,
 				5D62B6052185A40C006BBB20 /* GCSEmitterView.m in Sources */,
 				5D62B5DE2185A322006BBB20 /* main.m in Sources */,

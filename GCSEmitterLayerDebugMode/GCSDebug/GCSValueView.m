@@ -18,7 +18,7 @@ static NSString * const kChooseTypeKey = @"chooseTypeKey";
 
 @interface GCSValueView () <UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (nonatomic, assign) GCSValueViewStyle style;//属性类型
+@property (nonatomic, assign) GCSDebugConditionStyle style;//属性类型
 
 @property (nonatomic, strong) UILabel *attLabel;//属性名Label
 @property (nonatomic, copy) NSString *att;//属性名
@@ -62,14 +62,15 @@ static NSString * const kChooseTypeKey = @"chooseTypeKey";
     return _contentView;
 }
 
-- (instancetype)initWithAttribute:(NSString *)att style:(GCSValueViewStyle)style {
+- (instancetype)initWithAttribute:(NSString *)att style:(GCSDebugConditionStyle)style {
     self = [super init];
     if (self) {
         self.att = att;
         self.style = style;
         self.valueInfo = [NSMutableDictionary dictionary];
-        self.typesList = [GCSAttributedMap typesOfAttribute:self.att];
-        self.backgroundColor = [UIColor grayColor];
+        if (self.style == GCSDebugConditionStyleChooseType) {
+            self.typesList = [GCSAttributedMap typeStringOfAttribute:self.att];
+        }
         
         [self setupViews];
     }
@@ -88,23 +89,29 @@ static NSString * const kChooseTypeKey = @"chooseTypeKey";
     CGSize buttonSize = CGSizeMake(45, 30);
     self.finishBtn.frame = CGRectMake(GCS_SCREENW / 2 - buttonSize.width / 2, CGRectGetMaxY(self.contentView.frame) + kPaddingY, buttonSize.width, buttonSize.height);
     
-    self.frame = CGRectMake(0, 100, GCS_SCREENW, CGRectGetMaxY(self.finishBtn.frame) + kPaddingY);
+    self.backgroundColor = [UIColor grayColor];
+}
+
+- (CGFloat)calculateHeight {
+    return CGRectGetMaxY(self.finishBtn.frame) + kPaddingY;
 }
 
 - (void)done:(UIButton *)sender {
     id value;
-    if (self.style == GCSValueViewStyleChooseType) {
+    if (self.style == GCSDebugConditionStyleChooseType) {
         value = self.valueInfo[kChooseTypeKey];
-    } else if (self.style == GCSValueViewStyleWriteFloat ||
-               self.style == GCSValueViewStyleWriteString) {
+    } else if (self.style == GCSDebugConditionStyleWriteFloat ||
+               self.style == GCSDebugConditionStyleWriteString ||
+               self.style == GCSDebugConditionStyleWriteInt
+               ) {
         value = self.valueInfo[@"输入值"];
-    } else if (self.style == GCSValueViewStyleWritePoint) {
+    } else if (self.style == GCSDebugConditionStyleWritePoint) {
         value = [NSValue valueWithCGPoint:CGPointMake([self.valueInfo[@"x"] floatValue],
                                                       [self.valueInfo[@"y"] floatValue])];
-    } else if (self.style == GCSValueViewStyleWriteSize) {
+    } else if (self.style == GCSDebugConditionStyleWriteSize) {
         value = [NSValue valueWithCGPoint:CGPointMake([self.valueInfo[@"width"] floatValue],
                                                       [self.valueInfo[@"height"] floatValue])];
-    } else if (self.style == GCSValueViewStyleWriteRect) {
+    } else if (self.style == GCSDebugConditionStyleWriteRect) {
        value = [NSValue valueWithCGRect:CGRectMake([self.valueInfo[@"x"] floatValue],
                                                    [self.valueInfo[@"y"] floatValue],
                                                    [self.valueInfo[@"width"] floatValue],
@@ -120,30 +127,30 @@ static NSString * const kChooseTypeKey = @"chooseTypeKey";
 
 - (void)updateContentView {
     CGFloat height = 0;
-    if (self.style == GCSValueViewStyleChooseType) {
+    if (self.style == GCSDebugConditionStyleChooseType) {
         UIPickerView *pickerView = [self pickerViewForChooseTypeStyle];
         [self.contentView addSubview:pickerView];
         [pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
         }];
         height += 80;
-    } else if (self.style == GCSValueViewStyleWriteFloat ||
-               self.style == GCSValueViewStyleWriteString) {
+    } else if (self.style == GCSDebugConditionStyleWriteFloat ||
+               self.style == GCSDebugConditionStyleWriteString) {
         UITextField *textField = [self textFieldWithName:@"输入值"];
         [self.contentView addSubview:textField];
         [textField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
         }];
         height += kTextFieldHeight;
-    } else if (self.style == GCSValueViewStyleWritePoint) {
+    } else if (self.style == GCSDebugConditionStyleWritePoint) {
         NSArray *nameArr = @[@"x", @"y"];
         [self view:self.contentView setupTextFieldsWithArray:nameArr];
         height += kTextFieldHeight;
-    } else if (self.style == GCSValueViewStyleWriteSize) {
+    } else if (self.style == GCSDebugConditionStyleWriteSize) {
         NSArray *nameArr = @[@"width", @"height"];
         [self view:self.contentView setupTextFieldsWithArray:nameArr];
         height += kTextFieldHeight;
-    } else if (self.style == GCSValueViewStyleWriteRect) {
+    } else if (self.style == GCSDebugConditionStyleWriteRect) {
         NSArray *nameArr = @[@"x", @"y", @"width", @"height"];
         [self view:self.contentView setupTextFieldsWithArray:nameArr];
         height += kTextFieldHeight * 2 + kSpaceY;
@@ -186,17 +193,12 @@ static NSString * const kChooseTypeKey = @"chooseTypeKey";
     textField.placeholder = name;
     [textField setValue:[UIColor colorWithHexString:@"#C1C1C1"] forKeyPath:@"_placeholderLabel.textColor"];
     textField.textAlignment = NSTextAlignmentLeft;
-    textField.textColor = [UIColor colorWithHexString:@"#4B4B4B"];
     textField.returnKeyType = UIReturnKeyDone;
     textField.borderStyle = UITextBorderStyleLine;
-    textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    textField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    textField.tintColor = [UIColor colorWithHexString:@"#359df5"];
     [textField addTarget:self action:@selector(valueDidChanged:) forControlEvents:UIControlEventEditingChanged];
     textField.delegate = self;
-    if (self.style != GCSValueViewStyleWriteString) {
+    if (self.style != GCSDebugConditionStyleWriteString) {
         textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
     }
     

@@ -15,7 +15,6 @@ static const CGFloat kTextFieldHeight = 20;//输入框高度
 static const CGFloat kSpaceY = 4;//控件间距
 
 static NSString * const kChooseTypeKey = @"chooseTypeKey";
-static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
 
 @interface GCSValueView () <UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -70,6 +69,7 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
         self.style = style;
         self.valueInfo = [NSMutableDictionary dictionary];
         self.typesList = [GCSAttributedMap typesOfAttribute:self.att];
+        self.backgroundColor = [UIColor grayColor];
         
         [self setupViews];
     }
@@ -95,10 +95,9 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
     id value;
     if (self.style == GCSValueViewStyleChooseType) {
         value = self.valueInfo[kChooseTypeKey];
-    } else if (self.style == GCSValueViewStyleWriteFloat) {
-        value = self.valueInfo[kWriteNumberOrStringTypeKey];
-    } else if (self.style == GCSValueViewStyleWriteString) {
-        value = self.valueInfo[kWriteNumberOrStringTypeKey];
+    } else if (self.style == GCSValueViewStyleWriteFloat ||
+               self.style == GCSValueViewStyleWriteString) {
+        value = self.valueInfo[@"输入值"];
     } else if (self.style == GCSValueViewStyleWritePoint) {
         value = [NSValue valueWithCGPoint:CGPointMake([self.valueInfo[@"x"] floatValue],
                                                       [self.valueInfo[@"y"] floatValue])];
@@ -107,9 +106,9 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
                                                       [self.valueInfo[@"height"] floatValue])];
     } else if (self.style == GCSValueViewStyleWriteRect) {
        value = [NSValue valueWithCGRect:CGRectMake([self.valueInfo[@"x"] floatValue],
-                                           [self.valueInfo[@"y"] floatValue],
-                                           [self.valueInfo[@"width"] floatValue],
-                                           [self.valueInfo[@"height"] floatValue])];
+                                                   [self.valueInfo[@"y"] floatValue],
+                                                   [self.valueInfo[@"width"] floatValue],
+                                                   [self.valueInfo[@"height"] floatValue])];
     }
     
     if (self.doneCallBack) {
@@ -122,8 +121,11 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
 - (void)updateContentView {
     CGFloat height = 0;
     if (self.style == GCSValueViewStyleChooseType) {
-        UIPickerView *view = [self pickerViewForChooseTypeStyle];
-        [self.contentView addSubview:view];
+        UIPickerView *pickerView = [self pickerViewForChooseTypeStyle];
+        [self.contentView addSubview:pickerView];
+        [pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+        }];
         height += 80;
     } else if (self.style == GCSValueViewStyleWriteFloat ||
                self.style == GCSValueViewStyleWriteString) {
@@ -148,7 +150,7 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
     }
     
     self.contentView.frame = CGRectMake(kPaddingX,
-                                        CGRectGetMaxY(self.attLabel.frame) + kSpaceY,
+                                        CGRectGetMaxY(self.attLabel.frame) + kPaddingY,
                                         GCS_SCREENW - kPaddingX * 2,
                                         height);
     
@@ -163,10 +165,11 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
 }
 
 - (CGRect)calculateFrame:(NSInteger)idx {
-    NSInteger i = idx / 2 + 1;
+    NSInteger i = idx / 2 + 1;//行
+    NSInteger j = idx % 2 + 1;//列
     CGFloat width = (GCS_SCREENW - 3 * kPaddingX) / 2;
-    return CGRectMake((kPaddingX + width) * (i - 1),
-                                 (kSpaceY + kTextFieldHeight) * i,
+    return CGRectMake((kPaddingX + width) * (j - 1),
+                                 (kSpaceY + kTextFieldHeight) * (i - 1),
                                  width,
                                  kTextFieldHeight);
 }
@@ -175,9 +178,6 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
     UIPickerView *pickerView = [UIPickerView new];
     pickerView.delegate = self;
     pickerView.dataSource = self;
-    [pickerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
-    }];
     return pickerView;
 }
 
@@ -194,17 +194,23 @@ static NSString * const kWriteNumberOrStringTypeKey = @"writeNumberOrString";
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     textField.tintColor = [UIColor colorWithHexString:@"#359df5"];
+    [textField addTarget:self action:@selector(valueDidChanged:) forControlEvents:UIControlEventEditingChanged];
     textField.delegate = self;
+    if (self.style != GCSValueViewStyleWriteString) {
+        textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+    }
     
     return textField;
 }
 
 #pragma mark -TextField Delegate
 
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    if (GCS_VerifiedString(textField.text)) {
-        [self.valueInfo setObject:textField.text forKey:textField.placeholder];
+- (void)valueDidChanged:(UITextField *)textField {
+    if (!GCS_VerifiedString(textField.text)) {
+        return;
+        
     }
+    [self.valueInfo setObject:textField.text forKey:textField.placeholder];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

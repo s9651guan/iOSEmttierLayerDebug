@@ -23,7 +23,7 @@
     GCSDebugEntryView *view = [GCSDebugEntryView new];
     [self.view addSubview:view];
     
-    GCSValueView *valueView = [[GCSValueView alloc]initWithAttribute:@"lifetimeRange" style:GCSValueViewStyleWriteFloat];
+    GCSValueView *valueView = [[GCSValueView alloc]initWithAttribute:@"lifetimeRange" style:GCSValueViewStyleWriteRect];
     [self.view addSubview:valueView];
 }
 

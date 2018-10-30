@@ -99,4 +99,8 @@ static const CGFloat kCellHeight = 30;//cell高度
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"~~~~~");
+}
+
 @end

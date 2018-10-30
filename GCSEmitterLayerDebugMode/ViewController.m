@@ -10,6 +10,7 @@
 #import "GCSNavigationController.h"
 #import "GCSContentPickerViewController.h"
 #import "GCSDebugEntryView.h"
+#import "GCSValueView.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,9 @@
     [super viewDidLoad];
     GCSDebugEntryView *view = [GCSDebugEntryView new];
     [self.view addSubview:view];
+    
+    GCSValueView *valueView = [[GCSValueView alloc]initWithAttribute:@"lifetimeRange" style:GCSValueViewStyleWriteFloat];
+    [self.view addSubview:valueView];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		076E558D6C86DC46CCD07996 /* libPods-GCSEmitterLayerDebugMode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28476E29DC72531E14EF1E0A /* libPods-GCSEmitterLayerDebugMode.a */; };
+		5D04F46221875EA2005D17C6 /* GCSValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04F46121875EA2005D17C6 /* GCSValueView.m */; };
+		5D04F465218779E2005D17C6 /* GCSAttributedMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04F464218779E2005D17C6 /* GCSAttributedMap.m */; };
+		5D04F4682187DDA4005D17C6 /* UIColor+GCSHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D04F4672187DDA4005D17C6 /* UIColor+GCSHexColor.m */; };
 		5D62B5D02185A31F006BBB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5CF2185A31F006BBB20 /* AppDelegate.m */; };
 		5D62B5D32185A31F006BBB20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62B5D22185A31F006BBB20 /* ViewController.m */; };
 		5D62B5D62185A31F006BBB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D62B5D42185A31F006BBB20 /* Main.storyboard */; };
@@ -51,6 +54,12 @@
 /* Begin PBXFileReference section */
 		28476E29DC72531E14EF1E0A /* libPods-GCSEmitterLayerDebugMode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCSEmitterLayerDebugMode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		287CBA8BF049972C073D3A96 /* Pods-GCSEmitterLayerDebugMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCSEmitterLayerDebugMode.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCSEmitterLayerDebugMode/Pods-GCSEmitterLayerDebugMode.release.xcconfig"; sourceTree = "<group>"; };
+		5D04F46021875EA2005D17C6 /* GCSValueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSValueView.h; sourceTree = "<group>"; };
+		5D04F46121875EA2005D17C6 /* GCSValueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSValueView.m; sourceTree = "<group>"; };
+		5D04F463218779E2005D17C6 /* GCSAttributedMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCSAttributedMap.h; sourceTree = "<group>"; };
+		5D04F464218779E2005D17C6 /* GCSAttributedMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCSAttributedMap.m; sourceTree = "<group>"; };
+		5D04F4662187DDA4005D17C6 /* UIColor+GCSHexColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GCSHexColor.h"; sourceTree = "<group>"; };
+		5D04F4672187DDA4005D17C6 /* UIColor+GCSHexColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GCSHexColor.m"; sourceTree = "<group>"; };
 		5D62B5CB2185A31F006BBB20 /* GCSEmitterLayerDebugMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCSEmitterLayerDebugMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D62B5CE2185A31F006BBB20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D62B5CF2185A31F006BBB20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +157,8 @@
 				5D62B5CF2185A31F006BBB20 /* AppDelegate.m */,
 				5D62B5D12185A31F006BBB20 /* ViewController.h */,
 				5D62B5D22185A31F006BBB20 /* ViewController.m */,
+				5D04F4662187DDA4005D17C6 /* UIColor+GCSHexColor.h */,
+				5D04F4672187DDA4005D17C6 /* UIColor+GCSHexColor.m */,
 				5D62B6002185A39D006BBB20 /* GCSEmitterManager.h */,
 				5D62B6012185A39D006BBB20 /* GCSEmitterManager.m */,
 				5D62B6032185A40C006BBB20 /* GCSEmitterView.h */,
@@ -162,6 +173,10 @@
 				5D62B6102185B821006BBB20 /* GCSDebugConditionCell.m */,
 				5D62B6122185B897006BBB20 /* GCSContentPickerViewController.h */,
 				5D62B6132185B897006BBB20 /* GCSContentPickerViewController.m */,
+				5D04F46021875EA2005D17C6 /* GCSValueView.h */,
+				5D04F46121875EA2005D17C6 /* GCSValueView.m */,
+				5D04F463218779E2005D17C6 /* GCSAttributedMap.h */,
+				5D04F464218779E2005D17C6 /* GCSAttributedMap.m */,
 				5D62B6162185D45D006BBB20 /* GCSNavigationController.h */,
 				5D62B6172185D45D006BBB20 /* GCSNavigationController.m */,
 				5D62B6152185BB10006BBB20 /* GCSCommon.pch */,
@@ -385,9 +400,12 @@
 				5D62B60B2185B787006BBB20 /* GCSDebugEntryView.m in Sources */,
 				5D62B6082185B746006BBB20 /* GCSDebugView.m in Sources */,
 				5D62B6142185B897006BBB20 /* GCSContentPickerViewController.m in Sources */,
+				5D04F465218779E2005D17C6 /* GCSAttributedMap.m in Sources */,
 				5D62B6022185A39D006BBB20 /* GCSEmitterManager.m in Sources */,
 				5D62B5D32185A31F006BBB20 /* ViewController.m in Sources */,
 				5D62B6182185D45D006BBB20 /* GCSNavigationController.m in Sources */,
+				5D04F4682187DDA4005D17C6 /* UIColor+GCSHexColor.m in Sources */,
+				5D04F46221875EA2005D17C6 /* GCSValueView.m in Sources */,
 				5D62B60E2185B7F4006BBB20 /* GCSDebugSectionView.m in Sources */,
 				5D62B6052185A40C006BBB20 /* GCSEmitterView.m in Sources */,
 				5D62B5DE2185A322006BBB20 /* main.m in Sources */,

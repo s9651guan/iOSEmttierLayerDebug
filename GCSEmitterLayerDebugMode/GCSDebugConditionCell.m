@@ -30,6 +30,7 @@ static const CGFloat kPaddingX = 12;//左间距
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        [self setSelectionStyle:UITableViewCellSelectionStyleNone];
         self.backgroundColor = [UIColor clearColor];
         [self setupViews];
     }

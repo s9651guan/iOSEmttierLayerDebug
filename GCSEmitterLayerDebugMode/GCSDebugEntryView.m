@@ -10,9 +10,9 @@
 #import "GCSDebugView.h"
 
 static const CGFloat kDebugEntryWidth = 50;
-static const CGFloat kPaddingX = 12;
+static const CGFloat kPaddingX = 12;//左间距
 
-@interface GCSDebugEntryView ()
+@interface GCSDebugEntryView () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) GCSDebugView *debugView;
 
@@ -50,9 +50,17 @@ static const CGFloat kPaddingX = 12;
                             kDebugEntryWidth);
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
+    tap.delegate = self;
     [self addGestureRecognizer:tap];
     
     [self addSubview:self.debugView];
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if ([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"]) {
+        return NO;
+    }
+    return YES;
 }
 
 - (void)tap:(UITapGestureRecognizer *)gesture {

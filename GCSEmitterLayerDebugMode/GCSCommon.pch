@@ -9,6 +9,10 @@
 #ifndef GCSCommon_pch
 #define GCSCommon_pch
 #import "Masonry.h"
+#import "UIColor+GCSHexColor.h"
+
+typedef void(^GCSBlock)(void);
+typedef void(^GCSOneParamBlock)(id);
 
 #define GCS_SCREENW [UIScreen mainScreen].bounds.size.width//屏幕宽
 #define GCS_SCREENH [UIScreen mainScreen].bounds.size.height//屏幕宽
@@ -18,7 +22,12 @@
 #define GCS_NAV_PADDINGY (GCS_STATUS_HEIGHT + GCS_NAVBAR_HEIGHT)
 
 #define GCS_WS(weakSelf) __weak typeof(&*self)weakSelf = self;
-
-typedef void(^GCSBlock)(void);
+#define GCS_VerifiedString(string) ({\
+    BOOL isVerified = NO;\
+    if (string != nil  && [string isKindOfClass:NSString.class] && string.length > 0) {\
+    isVerified = YES;\
+    }\
+    isVerified;\
+})
 
 #endif /* GCSCommon_pch */

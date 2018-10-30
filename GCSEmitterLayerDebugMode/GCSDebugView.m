@@ -33,6 +33,7 @@
 }
 
 - (void)setupViews {
+    self.layer.cornerRadius = 8.f;
     self.frame = CGRectMake(GCS_SCREENW / 6,
                             GCS_SCREENH / 5 ,
                             GCS_SCREENW * 2 / 3,

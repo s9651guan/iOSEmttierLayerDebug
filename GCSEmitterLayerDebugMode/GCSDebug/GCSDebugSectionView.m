@@ -107,7 +107,9 @@ static const CGFloat kCellHeight = 30;//cell高度
     NSString *value = values[indexPath.row];
     GCSDebugConditionStyle style = [self.info[value] integerValue];
 
-    self.valueWindow = [GCSValueWindow showValueWindow:value type:style];
+    self.valueWindow = [GCSValueWindow showValueWindow:value type:style dismissCompletionHandler:^{
+        self.valueWindow = nil;
+    }];
 }
 
 @end

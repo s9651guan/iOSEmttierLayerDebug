@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GCSValueWindow : UIWindow
 
-+ (GCSValueWindow *)showValueWindow:(NSString *)attribute type:(GCSDebugConditionStyle)style;
++ (GCSValueWindow *)showValueWindow:(NSString *)attribute type:(GCSDebugConditionStyle)style dismissCompletionHandler:(GCSBlock)completionHandler;
 
 @end
 

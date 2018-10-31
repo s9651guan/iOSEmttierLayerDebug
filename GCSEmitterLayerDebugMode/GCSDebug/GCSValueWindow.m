@@ -12,12 +12,16 @@
 
 @property (nonatomic, strong) GCSValueView *valueView;
 
+@property (nonatomic, copy) GCSBlock completionHandler;
+
 @end
 
 @implementation GCSValueWindow
 
-+ (GCSValueWindow *)showValueWindow:(NSString *)attribute type:(GCSDebugConditionStyle)style {
++ (GCSValueWindow *)showValueWindow:(NSString *)attribute type:(GCSDebugConditionStyle)style dismissCompletionHandler:(GCSBlock)completionHandler {
     GCSValueWindow *valueWindow = [[GCSValueWindow alloc]initWithFrame:[UIScreen mainScreen].bounds attribute:attribute style:style];
+    
+    valueWindow.completionHandler = completionHandler;
     //显示Window
     valueWindow.hidden = NO;
     valueWindow.windowLevel = UIWindowLevelStatusBar + 100;
@@ -104,6 +108,9 @@
             self.valueView.frame = CGRectMake(0, GCS_SCREENH, GCS_SCREENW, height);
         } completion:^(BOOL finished) {
             self.hidden = YES;
+            if (self.completionHandler) {
+                self.completionHandler();
+            }
         }];
     }
 }
